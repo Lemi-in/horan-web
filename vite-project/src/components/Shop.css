@@ -1,0 +1,87 @@
+body {
+    background-color: #333;
+}
+
+.shop-container {
+    text-align: center;
+    color: #000000d5;
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.shoph {
+    color: #24ffffd5;
+    font-size: 30px; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    padding-top: 20px; /* Adjust padding for better spacing */
+}
+
+.shoph1 {
+    color: #24ffffd5;
+    font-size: 30px; /* Adjust font size for smaller screens */
+    font-weight: bold;
+}
+
+.shop-but {
+    background-color: #4CAF50;
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Add margin for better spacing */
+}
+
+.product-item {
+    flex: 0 0 calc(50% - 20px); /* Set the width of each item to one-half of the container width with some spacing */
+    margin: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto;
+}
+
+.add-to-cart-button,
+.go-to-cart-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .shoph {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      padding-top: 100px;
+  }
+
+  .product-item {
+      flex: 0 0 calc(50% - 10px); /* Set the width of each item to one-half of the container width with less spacing */
+      margin: 5px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shoph,
+  .shoph1 {
+      font-size: 18px; /* Further adjust font size for smaller screens */
+  }
+
+  .product-item {
+      flex: 0 0 calc(100% - 20px); /* Set the width of each item to full width with some spacing */
+      margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+}

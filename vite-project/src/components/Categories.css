@@ -1,0 +1,120 @@
+/* Categories.css */
+.categories-container {
+    padding-top: 200px;
+    text-align: center;
+    height: auto;
+    width: 800px;
+  }
+  
+  .categories-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #24ffffd5;
+  }
+  
+  .category-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .category-link {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .category-image-pants {
+    width: 600px;
+    height: 450px;
+  }
+  .category-image-shirts {
+    width: 600px;
+    height: 450px;
+  }
+  .category-image-shoes {
+    width: 600px;
+    height: auto;
+  }
+  .category-image-pants:hover {
+    filter: brightness(70%);
+  }
+  .category-image-shirts:hover {
+    filter: brightness(70%);
+  }
+  .category-image-shoes:hover{
+    filter: brightness(70%);
+  }
+  
+  .category-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-link:hover .category-name {
+    opacity: 1;
+  }
+  
+ 
+  
+  .category-link {
+    text-decoration: none; /* Remove default underline for links */
+  }
+  
+  .pants-but,
+  .shirts-but,
+  .shoes-but {
+    background-color: orangered; /* Set background color to transparent */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add transition effect for background color */
+  }
+  
+  .pants-but:hover,
+  .shirts-but:hover,
+  .shoes-but:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Darken background color on hover */
+  }
+  
+  .pants-but{
+    margin-left: 0px;
+   
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .categories-container {
+      padding-top: 100px; /* Adjust padding for smaller screens */
+
+    }
+    
+    .categories-title {
+      font-size: 40px; /* Adjust font size for smaller screens */
+    }
+    
+    .category-links {
+      justify-content: center;
+    }
+    
+    .category-link {
+      margin: 10px;
+    }
+    
+    .category-image-pants,
+    .category-image-shirts,
+    .category-image-shoes {
+      width: 100%; /* Ensure images fill their containers */
+      height: auto; /* Allow images to adjust their height accordingly */
+      max-height: 300px; /* Limit maximum image height for smaller screens */
+      margin: 0 auto; /* Center the images horizontally */
+    }
+  }

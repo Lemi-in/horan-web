@@ -1,0 +1,81 @@
+.cart-final-container {
+  background-color: #333; /* Set the background color of the whole page to dark gray */
+  color: #fff; /* Set text color to white */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center-align items horizontally */
+  padding: 20px; /* Add padding for better spacing */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100vw; 
+
+}
+
+.cart-final-container h2 {
+  color: #24ffffd5; 
+  font-size: 40px; /* Increase the font size of the heading */
+  font-weight: bold; /* Make the heading bold */
+  margin-bottom: 20px; /* Add some spacing below the heading */
+  padding-top: 100px;
+}
+
+.cart-final-container{
+  max-height: 100vh; /* Set maximum height for the cart items container */
+  overflow-y: auto; /* Enable vertical scrolling when overflowed */
+}
+.cart-final-container ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0;
+}
+
+.cart-final-container li {
+  margin-bottom: 20px; /* Add spacing between each item in the list */
+}
+
+.cart-final-container p {
+  margin: 5px 0; /* Add some spacing above and below each paragraph */
+}
+.su{
+  color: #24ffffd5;
+}
+.su1 {
+  color: #24ffffd5;
+
+}
+.trun{
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .cart-final-container {
+    padding: 10px;
+  }
+
+  .cart-final-container h2 {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+
+  .cart-final-container ul {
+    padding: 0;
+  }
+
+  .cart-final-container li {
+    margin-bottom: 10px;
+  }
+
+  .cart-final-container p {
+    margin: 5px 0;
+  }
+
+  .su {
+    color: #24ffffd5;
+  }
+
+  .su1 {
+    color: #24ffffd5;
+  }
+
+  .trun {
+    color: orange;
+  }
+}

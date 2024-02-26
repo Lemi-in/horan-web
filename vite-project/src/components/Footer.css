@@ -1,0 +1,38 @@
+.footer {
+  width: 100%; /* Keep as is, relative to the parent container */
+  max-width: 100%; /* Keep as is, relative to the parent container */
+  background-color: #2b2323;
+  padding: 2.5%; /* Set padding as a percentage of the width */
+  text-align: center;
+  color: #fff;
+  padding-top: 7%; /* Set padding-top as a percentage of the height */
+  /* Align the footer to the bottom of the viewport */
+}
+
+.contact-info {
+  margin-bottom: 1.5%; /* Set margin as a percentage of the parent container's width */
+}
+
+.contact-info p {
+  margin: 1.25% 0; /* Set margin as a percentage of the parent container's width */
+}
+
+.copyright {
+  font-size: 0.8rem; /* Keep as is */
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+      padding-top: 3%; /* Reduce top padding for smaller screens */
+      padding-bottom: 3%; /* Reduce bottom padding for smaller screens */
+      padding-left: 0.5%; /* Reduce left padding for smaller screens */
+  }
+
+  .contact-info p {
+      font-size: 0.8rem; /* Reduce font size for contact info */
+  }
+
+  .copyright {
+      font-size: 0.7rem; /* Reduce font size for copyright */
+  }
+}

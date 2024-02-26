@@ -1,0 +1,60 @@
+/* About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px; /* Reduce bottom padding for better spacing */
+  min-height: 100vh
+} 
+
+.about-content {
+  width: 100%;
+  ; /* Adjust to full width on smaller screens */
+}
+
+.about-image-container {
+  margin-top: 20px; /* Add margin to separate the image from the text */
+}
+
+.about-image {
+  width: 100%; /* Adjust image width to fill container */
+  max-width: 800px; /* Set maximum image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+  color: white;
+  padding: 20px; /* Add padding for better spacing */
+  text-align: center; /* Center text on smaller screens */
+}
+
+.header {
+  color: #24ffffd5;
+  margin-bottom: 10px; /* Add margin bottom for better spacing */
+}
+
+/* Media query for responsiveness */
+
+@media screen and (min-width: 768px) {
+  .about-container {
+      flex-direction: row; /* Switch back to horizontal layout on larger screens */
+      justify-content: center; /* Center items horizontally */
+  }
+
+  .about-content {
+      width: 60%; /* Revert width to original value */
+  }
+
+  .about-image-container {
+      margin-top: 0; /* Remove top margin on larger screens */
+      margin-left: 20px; /* Restore left margin */
+  }
+
+  .text {
+      padding: 0; /* Remove padding on larger screens */
+      text-align: left; /* Restore text alignment */
+      width: auto; /* Allow text to fill available width */
+  }
+}

@@ -1,0 +1,76 @@
+/* Collections.css */
+
+.latest-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .latest-item {
+    width: 30%;
+    margin: 1%; /* Add margin for spacing */
+    display: flex; /* Ensure flex layout for consistent height */
+  }
+  
+  .latest-item img {
+    width: 50%; /* Ensure images occupy full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a max-height to maintain consistency */
+  }
+  
+  .latest-item:hover img {
+    filter: brightness(70%); /* Darken image on hover */
+  }
+  
+  .latest-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .quantity-control {
+    
+    align-items: center;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 5px;
+    color: blue;
+    padding-left: 10px;
+  }
+  
+  .quantity-control button {
+    margin: 0 5px;
+    background-color: orange;
+    
+
+  }
+  
+  .addto {
+    width: 100%;
+    background: orange;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .addto:hover {
+    background: darkorange;
+  }
+  
+  @media (max-width: 768px) {
+    .latest-item {
+      width: 100%;
+    }
+  
+    .latest-details {
+      width: 100%;
+    }
+  
+    .quantity-control {
+      margin-bottom: 10px;
+    }
+  
+    .addto {
+      padding: 15px;
+    }
+  }

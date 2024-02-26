@@ -1,0 +1,60 @@
+.shirts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shirt-item {
+  width: 30%;
+  margin: 1%;
+  display: flex;
+}
+
+.shirt-item img {
+  width: 50%;
+  height: auto;
+  max-height: 400px;
+}
+
+.shirt-item:hover img {
+  filter: brightness(70%);
+}
+
+.shirt-details {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 70%;
+}
+
+.quantity-control {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  color: blue;
+  padding-left: 10px;
+}
+
+.quantity-control button {
+  margin: 0 5px;
+  background-color: orangered;
+}
+
+.addto {
+  width: 100%;
+  background: orange;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.addto:hover {
+  background: darkorange;
+}
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .shirt-item {
+    width: 90%; /* Adjust item width for smaller screens */
+    margin: 5% auto; /* Center items horizontally */
+  }
+}
